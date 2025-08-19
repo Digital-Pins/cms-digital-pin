@@ -1,0 +1,12 @@
+{
+  "collectionName": "approvals",
+  "info": { "singularName": "approval", "pluralName": "approvals", "displayName": "Approval" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "change_request": { "type": "relation", "relation": "manyToOne", "target": "api::change-request.change-request" },
+    "approver": { "type": "relation", "relation": "manyToOne", "target": "plugin::users-permissions.user" },
+    "decision": { "type": "string" },
+    "comment": { "type": "text" },
+    "decided_at": { "type": "datetime" }
+  }
+}

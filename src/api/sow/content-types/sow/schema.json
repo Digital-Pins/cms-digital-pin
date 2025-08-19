@@ -1,0 +1,21 @@
+{
+  "collectionName": "sows",
+  "info": { "singularName": "sow", "pluralName": "sows", "displayName": "SOW" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "project_title": { "type": "string" },
+    "background": { "type": "text" },
+    "scope_details": { "type": "text" },
+    "out_of_scope": { "type": "text" },
+    "approach": { "type": "text" },
+    "deliverables": { "type": "text" },
+    "timeline": { "type": "text" },
+    "client_responsibilities": { "type": "text" },
+    "pricing": { "type": "text" },
+    "change_control": { "type": "text" },
+    "acceptance": { "type": "text" },
+    "support_level": { "type": "string" },
+    "legal": { "type": "text" },
+    "signatures": { "type": "json" }
+  }
+}

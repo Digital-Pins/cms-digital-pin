@@ -1,0 +1,11 @@
+{
+  "collectionName": "projects",
+  "info": { "singularName": "project", "pluralName": "projects", "displayName": "Project" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "name": { "type": "string" },
+    "charter": { "type": "text" },
+    "status": { "type": "string", "default": "prospect" },
+    "sow": { "type": "relation", "relation": "oneToOne", "target": "api::sow.sow" }
+  }
+}

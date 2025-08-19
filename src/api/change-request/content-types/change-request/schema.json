@@ -1,0 +1,23 @@
+{
+  "collectionName": "change_requests",
+  "info": { "singularName": "change-request", "pluralName": "change-requests", "displayName": "Change Request" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "cr_identifier": { "type": "string", "unique": true },
+    "requested_by": { "type": "string" },
+    "description": { "type": "text" },
+    "business_justification": { "type": "text" },
+    "scope_impact": { "type": "text" },
+    "effort_hours": { "type": "integer" },
+    "cost_impact": { "type": "decimal" },
+    "schedule_impact": { "type": "text" },
+    "risks": { "type": "text" },
+    "alternatives": { "type": "text" },
+    "decision": { "type": "string" },
+    "approvers": { "type": "json" },
+    "implementation_plan": { "type": "text" },
+    "owner": { "type": "string" },
+    "status": { "type": "string", "default": "draft" },
+    "project": { "type": "relation", "relation": "manyToOne", "target": "api::project.project" }
+  }
+}
